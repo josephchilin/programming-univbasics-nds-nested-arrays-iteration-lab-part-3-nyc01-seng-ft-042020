@@ -18,6 +18,6 @@ def join_nested_strings(src)
     
     row_index += 1 
   end
-  final_data.join(" ")
-  final_data
+  joined_data = final_data.join(" ")
+  joined_data
 end
