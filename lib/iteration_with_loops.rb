@@ -11,10 +11,10 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
 
   row_index = 0 
-  final_data = []
+  clean_data = []
   while row_index < src.count do
-    filter_data = src[row_index].select { |element| element.is_a?(String) }
-    final_data << filter_data
+    filtered_data = src[row_index].select { |element| element.is_a?(String) }
+    clean_data << filtered_data
     
     row_index += 1 
   end
